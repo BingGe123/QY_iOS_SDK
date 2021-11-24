@@ -144,7 +144,7 @@ QYSDK 动态库已在 **V5.11.0** 版本正式上线：[CocoaPods地址](http://
 
 1. 从 V3.1.0 版本开始，不再提供 QIYU_iOS_SDK_Exclude_Libcrypto、QIYU_iOS_SDK_Exclude_NIM 版本，统一使用 **QIYU_iOS_SDK**，此 SDK 中独立第三方库，提供3个静态库文件：libQYSDK.a、libcrypto.a、libevent.a。
 2. 如果您同时使用了网易云信 iOS SDK 静态库版本，请只导入 libQYSDK.a，不要导入其他两个 .a 文件。
-3. 如果您同时使用了 **OpenSSL** 库，或者您集成的其它静态库使用了 OpenSSL 库（比如支付宝 SDK ），请只导入 libQYSDK.a、libevent.a，不要导入 libcrypto.a：
+3. 如果您同时使用了 **OpenSSL** 库，或者您集成的其它静态库使用了 OpenSSL 库，请只导入 libQYSDK.a、libevent.a，不要导入 libcrypto.a：
    - 请注意，SDK 依赖的 OpenSSL 库版本为 **1.0.2d**，与 1.1.0 及以上版本存在兼容问题。
    - 如遇版本兼容问题，我们提供升级版本 SDK ：<a :href="$withBase('/res/QIYU_iOS_SDK_SSL_v5.7.0.zip')">**QIYU_iOS_SDK_SSL**</a> ，依赖的 OpenSSL 库版本为 **1.1.0c**  ，请下载后不要导入 libcrypto.a。此 SDK 跟随每次版本发布更新。
 
